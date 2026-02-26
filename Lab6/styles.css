@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+
+body{
+  margin:0;
+  font-family:'Oswald', sans-serif;
+  background:#d9d9d9;
+  color:#111;
+}
+
+/* HEADER */
+header{
+  padding:24px 48px 16px 48px;
+  background:#d9d9d9;
+}
+
+h1{
+  margin:0 0 10px 0;
+  font-weight:600;
+}
+
+/* NAV BUTTONS */
+nav a{
+  margin-right:12px;
+  padding:6px 14px;
+  background:#f2f2f2;
+  display:inline-block;
+  text-decoration:none;
+  font-weight:400;
+}
+
+/* REQUIRED PSEUDO CLASSES */
+nav a:link{ color:#111; }
+nav a:visited{ color:#111; }
+nav a:hover{ background:#111; color:#fff; }
+nav a:active{ background:#b30000; color:#fff; }
+
+/* MAIN SPACING */
+main{
+  padding:48px;
+}
+
+/* BACKGROUND IMAGE LAYER */
+.oly::before,
+.sea::before,
+.nba::before{
+  content:"";
+  position:fixed;
+  left:0;
+  right:0;
+  top:130px;
+  bottom:0;
+  z-index:-1;
+  opacity:.95;
+
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+}
+
+/* page backgrounds */
+.oly::before{ background-image:url(images/olympic.jpg); }
+.sea::before{ background-image:url(images/nfl.jpg); }
+.nba::before{ background-image:url(images/nba.jpg); }
+
+/* TEXT CARD */
+.card{
+  padding:20px 22px;
+  margin-top:-48px;
+  max-width:560px;
+  border:none;
+}
+
+/* TEXT STYLE */
+.card p{
+  margin:0 0 14px 0;
+  font-weight:400;
+  font-size:19px;
+  line-height:1.35;
+}
+
+/* COLOR THEMES */
+.oly-card{
+  background:#b30000;
+  color:#fff;
+}
+
+.sea-card{
+  background:#002244;
+  color:#d9d9d9;
+}
+
+.nba-card{
+  background:#2b6cb0;
+  color:#f5f1e6;
+  max-width:420px;
+}
+
+/* VIDEO */
+iframe{
+  margin-top:15px;
+  max-width:100%;
+}
