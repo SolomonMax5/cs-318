@@ -1,0 +1,142 @@
+body{
+  background-color:#27213C;
+  margin:0;
+  color:#fff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+  background-color:rgba(39, 33, 60, .70);
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:center;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1;
+}
+
+nav>a{
+  color:#e2512d;
+  text-decoration:none;
+  padding:1rem 2rem;
+  font-weight:900;
+  display:inline-block;
+}
+
+nav>a:hover{
+  color:#A33B20;
+  text-decoration:underline;
+}
+
+.animal-background{
+  position:fixed;
+  top:-12rem;
+  width:200%;
+  left:-51%;
+  height:50rem;
+  z-index:-1;
+  background-image:url("images/animal.jpg");
+  background-size:cover;
+}
+
+section>h2{
+  text-align:center;
+  padding:13rem 0;
+  text-shadow:2px 2px 2px #27213C;
+  background-size:cover;
+  margin:0;
+  border-bottom:2rem solid #e2512d;
+}
+
+section{
+  background-color:#A33B20;
+}
+
+.animals{
+  background-color:transparent;
+}
+
+.sloth>h2{
+  background-image:url("images/sloth.jpg");
+}
+
+.elephant>h2{
+  background-image:url("images/elephant.jpg");
+}
+
+.owl>h2{
+  background-image:url("images/owl.jpg");
+}
+
+article{
+  padding:1rem;
+  display:none;
+}
+
+article.show{
+  display:block;
+}
+
+section span{
+  position:absolute;
+  top:15rem;
+  font-size:2rem;
+  left:calc(50% - 11px);
+  transform:rotate(180deg);
+}
+
+span.rotate{
+  transform:rotate(0);
+}
+
+section>h2{
+  position:relative;
+}
+
+.accordion{
+  cursor:pointer;
+}
+
+.sidelink{
+  background-color:#27213C;
+  color:#fff;
+  padding:1rem 2rem;
+  text-decoration:none;
+  position:fixed;
+  transform:rotate(90deg);
+  z-index:1;
+  top:30%;
+  right:-6rem;
+}
+
+@media (min-width:1000px){
+
+  .animal-background{
+    height:100rem;
+    top:-25%;
+  }
+
+  section>h2{
+    padding:23rem 0;
+    font-size:3rem;
+    background-position:center;
+  }
+
+  section span{
+    font-size:4rem;
+    top:26rem;
+    left:calc(50% - 22px);
+  }
+
+  nav{
+    position:absolute;
+    top:2rem;
+    left:2rem;
+  }
+
+  article{
+    max-width:60rem;
+    margin:0 auto;
+  }
+}
