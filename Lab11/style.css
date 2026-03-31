@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    background-color: #f2eee8;
+    font-family: "Berlin Sans FB", Arial, sans-serif;
+    color: #222222;
+}
+
+img {
+    width: 100%;
+}
+
+/* NAV */
+
+header {
+    background-color: #211b1c;
+}
+
+nav {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 350px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    margin-left: 45px;
+}
+
+/* HERO */
+
+.hero img {
+    width: 100%;
+}
+
+/* STORY */
+
+.story {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.story-image {
+    width: 380px;
+    height: 380px;
+    min-width: 380px;
+}
+
+.story-image img {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.story-text {
+    margin-left: 50px;
+}
+
+.story-text h2 {
+    font-size: 34px;
+    color: #203d31;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-size: 24px;
+    line-height: 1.5;
+
+}
+
+/* BAR */
+
+.bar {
+    background-color: #211b1c;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.bar h2 {
+    color: white;
+    font-size: 34px;
+}
+
+/* DRINKS */
+
+.drinks {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.specialty {
+    width: 45%;
+}
+
+.specialty h3,
+.beer h3 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.specialty h4 {
+    font-size: 24px;
+    color: #203d31;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.specialty p {
+    font-size: 22px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.specialty img {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.beer {
+    width: 40%;
+    text-align: right;
+}
+
+.beer p {
+    font-size: 24px;
+    color: #203d31;
+    margin-bottom: 22px;
+}
+
+/* MENU */
+
+.menu {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.dinner {
+    width: 60%;
+}
+
+.desserts {
+    width: 30%;
+    text-align: right;
+}
+
+.dinner h3,
+.desserts h3 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.dinner h4 {
+    font-size: 24px;
+    color: #203d31;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.dinner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    width: 480px;
+}
+
+.desserts p {
+    font-size: 24px;
+    color: #203d31;
+    margin-bottom: 20px;
+}
+
+/* VISIT */
+
+.visit {
+    width: 100%;
+    background-color: #211b1c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.visit-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.visit-title span {
+    flex: 1;
+    height: 5px;
+    background-color: #f2eee8;
+}
+
+.visit-title h2 {
+    font-size: 34px;
+    margin: 0 15px;
+}
+
+.visit p {
+    font-size: 24px;
+}
