@@ -1,0 +1,59 @@
+body{
+padding:5rem;
+background-color:darkolivegreen;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+th{
+background-color:darkgreen;
+color:white;
+}
+
+tr:nth-child(even){
+background-color:#ffffe2;
+}
+
+tr:nth-child(odd){
+background-color:#e0e0cb;
+}
+
+td{
+padding:.5rem;
+}
+
+th{
+padding:.5rem;
+}
+
+thead>tr:first-child>th{
+font-size:2rem;
+color:goldenrod;
+}
+
+table{
+border-spacing:0;
+}
+
+tbody th{
+background-color:#023802;
+}
+
+tbody th:hover{
+background-color:#022502;
+}
+
+td{
+vertical-align:top;
+}
+
+th{
+vertical-align:top;
+}
+
+td{
+border:1px solid #023502;
+}
+
+tbody tr:hover{
+background-color:#D8D8B6;
+}
