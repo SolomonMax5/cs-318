@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brunch</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Brunch</h1>
+
+  <a href="index.html">
+    <img src="images/logo.svg" alt="Brunch logo">
+  </a>
+
+  <nav>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="order.html">Order</a>
+  </nav>
+</header>
+
+<main>
+  <section class="order">
+    <form>
+     <div class="title">
+  <img src="images/take-away.svg" alt="coffee cup">
+  <h2>Place Order</h2>
+  <img src="images/take-away.svg" alt="coffee cup">
+</div>
+
+      <div class="cloner">
+        <div class="container"></div>
+
+        <template>
+          <div class="row">
+            <label>Coffee</label>
+
+            <select>
+              <option value="drip-coffee">Drip Coffee</option>
+              <option value="cafe-au-lait">Cafe Au Lait</option>
+              <option value="americano">Americano</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="latte">Latte</option>
+              <option value="chai">Chai</option>
+              <option value="matcha">Matcha</option>
+              <option value="mocha">Mocha</option>
+              <option value="cold-brew">Cold Brew</option>
+              <option value="hot-chocolate">Hot Chocolate</option>
+              <option value="shot-in-the-dark">Shot in the Dark</option>
+              <option value="cafe-con-miel">Cafe con Miel</option>
+              <option value="breve">Breve</option>
+              <option value="dirty-chai">Dirty Chai</option>
+              <option value="peppermint-mocha">Peppermint Mocha</option>
+              <option value="affogato">Affogato</option>
+            </select>
+
+            <label>Size</label>
+
+            <select>
+              <option value="small">Small 12 oz.</option>
+              <option value="large">Large 16 oz.</option>
+            </select>
+
+            <label>Quantity</label>
+
+            <input type="number" value="1" min="1" max="10">
+
+            <a class="delete" onclick="removeRow(event)">X</a>
+          </div>
+        </template>
+
+        <a class="add-button"><span>+</span> Add Coffee</a>
+      </div>
+
+      <div class="cloner">
+        <div class="container"></div>
+
+        <template>
+          <div class="row">
+            <label>Waffle</label>
+
+            <input type="number" value="1" min="1" max="10">
+
+            <label>Topping 1</label>
+
+            <select>
+              <option value="cream-cheese">Sweetened Cream Cheese</option>
+              <option value="blueberry">Blueberry Pie Filling</option>
+              <option value="strawberry">Strawberry Pie Filling</option>
+              <option value="yogurt">Yogurt</option>
+              <option value="berries">Fresh Berries</option>
+              <option value="syrup">Syrup</option>
+              <option value="butter">Butter</option>
+              <option value="sugar">Powdered Sugar</option>
+              <option value="oreo">Oreo Crumble</option>
+              <option value="graham-cracker">Graham Cracker Crumble</option>
+              <option value="granola">Granola</option>
+              <option value="ham">Ham</option>
+              <option value="cheddar">Cheddar</option>
+              <option value="lettuce">Lettuce</option>
+              <option value="goat-cheese">Herb Goat Cheese</option>
+              <option value="peanut-butter">Peanut Butter</option>
+              <option value="marshmallow">Marshmallow Fluff</option>
+              <option value="raspberry">Raspberry Jam</option>
+              <option value="banana">Banana</option>
+              <option value="pecan">Pecans</option>
+            </select>
+
+            <label>Topping 2</label>
+
+            <select>
+              <option value="cream-cheese">Sweetened Cream Cheese</option>
+              <option value="blueberry">Blueberry Pie Filling</option>
+              <option value="strawberry">Strawberry Pie Filling</option>
+              <option value="yogurt">Yogurt</option>
+              <option value="berries">Fresh Berries</option>
+              <option value="syrup">Syrup</option>
+              <option value="butter">Butter</option>
+              <option value="sugar">Powdered Sugar</option>
+              <option value="oreo">Oreo Crumble</option>
+              <option value="graham-cracker">Graham Cracker Crumble</option>
+              <option value="granola">Granola</option>
+              <option value="ham">Ham</option>
+              <option value="cheddar">Cheddar</option>
+              <option value="lettuce">Lettuce</option>
+              <option value="goat-cheese">Herb Goat Cheese</option>
+              <option value="peanut-butter">Peanut Butter</option>
+              <option value="marshmallow">Marshmallow Fluff</option>
+              <option value="raspberry">Raspberry Jam</option>
+              <option value="banana">Banana</option>
+              <option value="pecan">Pecans</option>
+            </select>
+
+            <a class="delete" onclick="removeRow(event)">X</a>
+          </div>
+        </template>
+
+        <a class="add-button"><span>+</span> Add Waffle</a>
+      </div>
+
+      <a class="button" href="#">Order</a>
+
+      <dialog>
+        <a class="close">X</a>
+        <p>Thanks for your Order!</p>
+      </dialog>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="order.html">Order</a>
+  </div>
+
+  <a href="https://www.google.com/maps/dir//University+of+Wisconsin%E2%80%93Eau+Claire,+105+Garfield+Ave,+Eau+Claire,+WI+54701/">
+    Brunch<br>105 Garfield Ave<br>Eau Claire WI 54701
+  </a>
+
+  <div class="social">
+    <a href="https://fb.com/">
+      <img src="images/facebook.svg" alt="Facebook logo">
+    </a>
+
+    <a href="https://instagram.com/">
+      <img src="images/instagram-2 (1).svg" alt="Instagram logo">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
