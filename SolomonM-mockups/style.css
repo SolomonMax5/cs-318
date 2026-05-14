@@ -224,3 +224,51 @@ button:hover {
   color: #555;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero {
+    height: 360px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .brand-index {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .brand-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .top-products {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+}
