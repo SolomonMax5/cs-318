@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Max Solomon Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo-name">
+
+      <img src="images/ms-logo.png" alt="MS logo">
+
+      <h1>Maxwell Solomon</h1>
+
+    </div>
+
+    <nav>
+
+      <a href="#work">Work</a>
+
+      <a href="#about">About</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="about" class="about-section">
+
+      <div class="about-text">
+
+        <h2>About Me</h2>
+
+        <p>
+          I’m a graphic communications student focused on clean, bold design. I’m inspired by sports, fashion, and modern branding, and I like creating work that feels simple but still stands out. I'm especially into strong typography and layout, and I try to keep everything feeling intentional without overcomplicating it.
+        </p>
+
+        <p>
+          Threadfellows - Graphic Design Intern
+          <br>
+          Designed branded graphics and worked on marketing content.
+        </p>
+
+        <p>
+          University of Wisconsin–Eau Claire
+          <br>
+          Graphic Communications
+          <br>
+          Expected Graduation: 2026
+        </p>
+
+      </div>
+
+      <img class="portrait" src="images/Portrait.jpg" alt="Portrait of Maxwell Solomon">
+
+    </section>
+
+    <section id="work">
+
+      <h2>Selected Work</h2>
+
+      <div class="work-grid">
+
+<img src="images/Joker.jpg" alt="Joker painting" onclick="openImage(this.src)">
+
+        <img src="images/Mustache.jpg" alt="Mustache artwork" onclick="openImage(this.src)">
+
+        <img src="images/Eminem.jpg" alt="Eminem design" onclick="openImage(this.src)">
+
+        <img src="images/Garbage.jpg" alt="Garbage Man artwork" onclick="openImage(this.src)">
+
+        <img src="images/Jaguar.PNG" alt="Jaguar artwork" onclick="openImage(this.src)">
+
+         <img src="images/Tree.jpg" alt="Tree artwork" onclick="openImage(this.src)">
+
+        <img src="images/Goat.png" alt="Goat Debate design" onclick="openImage(this.src)">
+
+        <img src="images/Cards1.png" alt="Trading card design 1" onclick="openImage(this.src)">
+
+        <img src="images/Cards2.png" alt="Trading card design 2" onclick="openImage(this.src)">
+
+        <img src="images/Plant.png" alt="Plant project" onclick="openImage(this.src)">
+
+        <img src="images/Pop.png" alt="Pop art project" onclick="openImage(this.src)">
+
+        <img src="images/TF.png" alt="Threadfellows design" onclick="openImage(this.src)">
+
+      </div>
+
+      <div id="image-popup" onclick="closeImage()">
+        <img id="popup-img" src="" alt="Larger portfolio image">
+      </div>
+
+    </section>
+
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <p>
+        solomonmax4@gmail.com
+        <br>
+        608 778 4984
+      </p>
+
+    </section>
+
+  </main>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("image-popup").style.display = "flex";
+      document.getElementById("popup-img").src = src;
+    }
+
+    function closeImage() {
+      document.getElementById("image-popup").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
